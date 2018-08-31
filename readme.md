@@ -121,7 +121,7 @@
 * Pour la structure switch, pensez à mettre les instructions break; si vous ne souhaitez exécuter qu'un seul bloc case.
 
 
-#5* 
+#5
 * Les boucles vous permettent simplement d'effectuer des tâches répétitives.
 
 * Il existe plusieurs sortes de boucles :
@@ -157,5 +157,70 @@
         System.out.println("Au revoir…");
 ```
 
+# 5
+Un tableau est une variable contenant plusieurs données d'un même type.
 
-j'aime les fruits bio
+Pour déclarer un tableau, il faut ajouter des crochets [ ] à la variable ou à son type de déclaration.
+
+Vous pouvez ajouter autant de dimensions à votre tableau que vous le souhaitez, ceci en cumulant des crochets à la déclaration.
+
+Le premier élément d'un tableau est l'élément 0.
+
+Vous pouvez utiliser la syntaxe du JDK 1.5 de la boucle for pour parcourir vos tableaux : for(String str : monTableauDeString).
+```xml
+<type du tableau> <nom du tableau> [] = { <contenu du tableau>};`
+```
+```java
+int tableauEntier[] = {0,1,2,3,4,5,6,7,8,9};
+double tableauDouble[] = {0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0};
+char tableauCaractere[] = {'a','b','c','d','e','f','g'};
+String tableauChaine[] = {"chaine1", "chaine2", "chaine3" , "chaine4"};
+```
+```java
+String tab[] = {"toto", "titi", "tutu", "tete", "tata"};
+ 
+for(String str : tab)
+  System.out.println(str);
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```java
+String str1 = new String("coucou"), str2 = new String("toutou");
+ 
+if (str1.equals(str2))
+  System.out.println("Les deux chaînes sont identiques !");
+ 
+else
+  System.out.println("Les deux chaînes sont différentes !");
+
+
+String mot = new String("anticonstitutionnellement");
+int n = 0;
+ 
+n = mot.indexOf('t');           //n vaut 2
+n = mot.lastIndexOf('t');       //n vaut 24
+n = mot.indexOf("ti");          //n vaut 2
+n = mot.lastIndexOf("ti");      //n vaut 12
+n = mot.indexOf('x');           //n vaut -1
+
+
+
+String nbre = new String("1234567");
+char carac = nbre.charAt(4);   //Renverra ici le caractère 5
+
+String chaine = new String("la paix niche"), chaine2 = new String();
+chaine2 = chaine.substring(3,13);   //Permet d'extraire "paix niche"
+```
