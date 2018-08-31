@@ -158,4 +158,4 @@
 ```
 
 
-j'aime les frites
+j'aime les fruits
